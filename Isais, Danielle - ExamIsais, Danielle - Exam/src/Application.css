@@ -1,0 +1,111 @@
+.root {
+    -fx-background-color: #f9f9f9;
+}
+
+#left {
+    -fx-background-color: rgba(240, 248, 255, 0.7);
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 20px;
+    -fx-background-image: url("https://i.pinimg.com/564x/38/c5/32/38c5327218e10ab2cf32edc46d18e632.jpg");
+    -fx-background-size: cover;
+}
+
+#left .label,
+#left .text-field,
+#left .combo-box,
+#left .button {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0);
+}
+
+#left .combo-box {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+#left .text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+#right {
+    -fx-background-color: white;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 20px;
+}
+
+.receipt-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+.receipt-value {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.receipt-header {
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-text-fill: #333;
+}
+
+.receipt-footer {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 15px;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #45a049;
+    -fx-border-width: 1px;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+#errorLabel {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ff4545;
+}
+
+#btnClose {
+    -fx-background-color: transparent;
+}
+
+#fareLabel {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+#fareField {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+#left .text-field {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}

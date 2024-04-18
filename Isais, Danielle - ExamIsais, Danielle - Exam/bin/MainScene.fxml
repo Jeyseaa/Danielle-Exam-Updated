@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@Application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="left" layoutY="7.0" prefHeight="400.0" prefWidth="300.0" stylesheets="@Application.css">
+               <children>
+                  <ImageView layoutX="11.0" layoutY="2.0" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="2.0">
+                     <image>
+                        <Image url="@../../../../../Downloads/toy-train.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="98.0" layoutY="34.0" text="Tarlac Train Express">
+                     <font>
+                        <Font name="Georgia Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="121.0" text="Origin">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="179.0" text="Destination">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="247.0" text="Discount">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="calculateButton" layoutX="88.0" layoutY="357.0" mnemonicParsing="false" onAction="#calculateFare" text="Compute Fare" />
+                  <Label layoutX="30.0" layoutY="305.0" text="Fare">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="TFFare" fx:id="fareField" editable="false" layoutX="111.0" layoutY="299.0" prefHeight="25.0" prefWidth="143.0" promptText="0.00" />
+                  <Label fx:id="errorLabel" layoutX="18.0" layoutY="315.0" textFill="red" />
+                  <ComboBox id="ComboStart" fx:id="ComboStart" layoutX="107.0" layoutY="110.0" prefWidth="150.0" promptText="Start Station" />
+                  <ComboBox id="ComboEnd" fx:id="ComboEnd" layoutX="107.0" layoutY="168.0" prefWidth="150.0" promptText="End Station" />
+                  <ComboBox id="ComboDiscount" fx:id="ComboDiscount" layoutX="107.0" layoutY="236.0" prefWidth="150.0" promptText="Senior Citizen" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="right" layoutX="293.0" layoutY="7.0" prefHeight="422.0" prefWidth="333.0" stylesheets="@Application.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="65.0" text="Daily Summary Report" textFill="#2d2e2f">
+                     <font>
+                        <Font name="Georgia Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="120.0" text="Total Fare Collected">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="192.0" text="Vat 12%">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="250.0" text="Net Collection">
+                     <font>
+                        <Font name="Georgia" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="TFCollected" fx:id="TotalFareCollected" editable="false" layoutX="141.0" layoutY="115.0" promptText="Php 0.00" />
+                  <TextField id="TFVat" fx:id="Vat" editable="false" layoutX="137.0" layoutY="188.0" promptText="0.00" />
+                  <TextField id="TFNet" fx:id="Net" editable="false" layoutX="137.0" layoutY="246.0" promptText="0.00" />
+                  <Button fx:id="btnClose" layoutX="248.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleClose" textFill="#5b5555" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+    <graphic>
+        <ImageView fx:id="ButtonClose" fitHeight="23.0" fitWidth="28.0">
+            <image>
+                <Image url="@../../../../../Downloads/cancel.png" />
+            </image>
+        </ImageView>
+    </graphic>
+</Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
